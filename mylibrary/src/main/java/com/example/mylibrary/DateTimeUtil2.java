@@ -1,4 +1,4 @@
-package com.matt.linphonelibrary.utils;
+package com.example.mylibrary;
 
 import android.annotation.SuppressLint;
 import android.text.TextUtils;
@@ -12,17 +12,17 @@ import java.util.Date;
 import java.util.TimeZone;
 import android.text.format.DateUtils;
 
-public class DateTimeUtil {
-    private volatile static DateTimeUtil dateTimeUtil = null;
+public class DateTimeUtil2 {
+    private volatile static DateTimeUtil2 dateTimeUtil = null;
     private Date date = new Date();
     @SuppressLint("SimpleDateFormat")
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
 
-    public static DateTimeUtil getInstance() {
+    public static DateTimeUtil2 getInstance() {
         if (null == dateTimeUtil) {
-            synchronized (DateTimeUtil.class) {
+            synchronized (DateTimeUtil2.class) {
                 if (null == dateTimeUtil) {
-                    dateTimeUtil = new DateTimeUtil();
+                    dateTimeUtil = new DateTimeUtil2();
                 }
             }
         }
